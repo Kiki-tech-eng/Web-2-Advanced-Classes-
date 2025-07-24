@@ -25,7 +25,9 @@ class Student extends Person {
     this.school = school;
   }
   student() {
-    console.log(`${this.fullName} is a student of ${this.school}`);
+    console.log(
+      `${this.fullName} who is ${this.age} and hails from ${this.homeTown} is a student of ${this.school}`
+    );
   }
 }
 
