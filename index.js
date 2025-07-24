@@ -9,7 +9,7 @@ class Person {
   }
   introduction() {
     console.log(
-      `I'm ${this.fullName} and I'm ${this.age} from ${this.homeTown}`
+      `I'm ${this.fullName} and I'm ${this.age} years old from ${this.homeTown}`
     );
   }
 }
@@ -48,7 +48,7 @@ class Teacher extends Person {
   }
   teacher() {
     console.log(
-      `Mr ${this.fullName} who is ${this.age} old, and comes from ${this.homeTown} will be aking us ${this.subject} this term`
+      `Mr ${this.fullName} who is ${this.age} years old old, and comes from ${this.homeTown} will be aking us ${this.subject} this term`
     );
   }
 }
