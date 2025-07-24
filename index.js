@@ -14,8 +14,8 @@ class Person {
   }
 }
 
-const Introduce = new Person("Gloria Kusoro", 22, "Ogun State");
-Introduce.introduction();
+const introduce = new Person("Gloria Kusoro", 22, "Ogun State");
+introduce.introduction();
 
 //2. Create a class Student that inherits from Person
 
@@ -38,3 +38,26 @@ const higherInstitution = new Student(
   "FUTA"
 );
 higherInstitution.student();
+
+//3. Create a class Teacher that inherits from Person
+
+class Teacher extends Person {
+  constructor(fullName, age, homeTown, subject) {
+    super(fullName, age, homeTown);
+    this.subject = subject;
+  }
+  teacher() {
+    console.log(
+      `Mr ${this.fullName} who is ${this.age} old, and comes from ${this.homeTown} will be aking us ${this.subject} this term`
+    );
+  }
+}
+
+const newTerm = new Teacher(
+  "Olarenwaju John",
+  47,
+  "Imo State",
+  "Literature-In-English"
+);
+
+newTerm.teacher();
